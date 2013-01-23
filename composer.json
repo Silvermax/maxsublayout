@@ -1,0 +1,17 @@
+{
+	"name": "silvermax/maxsublayout",
+	"description": "Use any layout for your pages in Children loop. Great for homepage with different children page types. Works fine if your children is redirector page - it will use sublayout of linked page.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "maxsublayout"],
+	"authors": [
+	{
+		"name": "Pali Ondras",
+		"email": "pali@silvermax.sk"
+	}
+	],
+	"require":
+	{
+		"silverstripe/framework": "3.*",
+		"silverstripe/cms": "3.*"
+	}
+}
