@@ -1,29 +1,25 @@
-maxsublayout
-============
-
 Use any layout (based on pagetype of children) for your children pages in Children loop. Great for homepage with different children page types. Works fine if your children is redirector page - it will use sublayout of linked page.  
 
-How to:
-============
-
+<h3>How to:</h3>
+<pre><code>
 <% loop Children %>
 	<article>
 		<h1>$Title</h1>
 		$Sublayout
 	</article>
 <% end_loop %>
-
+</code></pre>
 
 $Sublayout will be generated depending on Children's Pagetype.
 
-Example 
-============
+<h3>Example </h3>
 (showing 3 images from PortfolioPage pagetype). You can make this page as a direct children (PortfolioPage pagetype) or create as RedirectorPage linked to PortfolioPage. $FinalData are data from linked page, $Title is title of RedirectorPage (children). Sublayouts are stored in Sublayout folder and must be prefixed with "sl_".
 
-
+<pre><code>
 theme file: themes/your-theme/Sublayout/sl_PortfolioPage.ss
+</code></pre>
 
-
+<pre><code>
 <div class="Sublayout subpageType-$FinalData.ClassName PortfolioPageLayout">
 
 		<section class="ContentFull">
@@ -47,5 +43,5 @@ theme file: themes/your-theme/Sublayout/sl_PortfolioPage.ss
 		</section>
 		
 </div>
-
+</code></pre>
 
