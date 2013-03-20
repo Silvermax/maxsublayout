@@ -1,4 +1,4 @@
 <?php
 
-Object::add_extension('Page','SubLayoutPageExtension');
-DataObject::add_extension('Page','PerexExtension');
+Page::add_extension('SubLayoutPageExtension');
+Page::add_extension('PerexExtension');
