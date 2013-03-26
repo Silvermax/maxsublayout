@@ -2,7 +2,7 @@
 
 class SubLayoutPageExtension extends DataExtension {
 	
-	function Sublayout() {		
+	function Sublayout($prefix = "sl") {		
 		$p = $this->owner;
 		if ($this->owner instanceof RedirectorPage) {
 			if ($this->owner->RedirectionType == "Internal") {
@@ -19,7 +19,7 @@ class SubLayoutPageExtension extends DataExtension {
 		$render_classes[] = "Page";
 		
 		foreach ($render_classes as $rc) {
-				$rcs[] = "Sublayout/sl_".$rc; 
+				$rcs[] = "Sublayout/".$prefix."_".$rc; 
 		}
 
        	return $this->owner->customise(array("FinalData" => $p))->renderWith($rcs);
