@@ -1,0 +1,3 @@
+LeftAndMain:
+  extra_requirements_javascript:
+    - 'maxsublayout/javascript/LeftAndMain.cmsPreview.js'

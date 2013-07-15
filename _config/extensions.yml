@@ -1,0 +1,4 @@
+Page:
+  extensions:
+    - 'SubLayoutPageExtension'
+    - 'PerexExtension'
