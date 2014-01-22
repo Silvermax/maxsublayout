@@ -45,9 +45,6 @@ class SublayoutPage extends Page {
 			return ($parent = $this->Parent()) ? $parent->Link() : false;
 	}
 	
-	function MenuTitle() {
-		return ($parent = $this->Parent()) ? $parent->Title : $this->Title;
-	}
 	
 	function syncLinkTracking() {
 			if($this->ParentID) {
