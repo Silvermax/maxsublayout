@@ -1,6 +1,0 @@
----
-Name: mygooglesitemaproutes
----
-Director:
-  rules:
-    'sitemap.xml': 'MyGoogleSitemap'
